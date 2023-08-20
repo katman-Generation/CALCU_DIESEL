@@ -15,10 +15,8 @@ just visit the app at:
 
 ### Installing
 
-* jvisit the web app @
+* just visit the web app @
 ## Authors
-
-Contributors names and contact info
 
 Tatenda Katema
 

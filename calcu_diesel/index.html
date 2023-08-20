@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/styles.css" />
+    <title>diesel-calculation</title>
+</head>
+
+<body>
+   <h1>Desiel calculation</h1>
+    <form id="myForm">
+      <label for="trailer"> What type of a trailer do you have?
+        <select id="trailer" name="trailer">
+          <option value="">(select one)</option>
+          <option value="1">tri-axle</option>
+          <option value="2">link</option>
+        </select>
+      </label>
+      <label for="empty-loaded"> please select empty or loaded?
+        <select id="empty-loaded" name="empty-loaded">
+          <option value="">(select one)</option>
+          <option value="1">empty</option>
+          <option value="2">loaded</option>
+        </select>
+      </label>
+      <fieldset>
+        <label for="opening">Enter Your Opening mileage: <input id="opening" name="opening" type="number" required /></label>
+        <label for="closing">Enter Your closing mileage: <input id="closing" name="closing" type="number" required /></label>
+        <label for="total-ltrs">Enter the total litres you took: <input id="total-ltrs" name="total-ltrs" type="number" required /></label>
+      </fieldset>
+      <button onclick="dieselCalc(consuption())">submit</button>
+    </form>
+     <div class="results">
+      <h1>your results are ready</h1>
+      <P> you have travelled: <span id="km-moved"></span>  kms</p>
+      <P>You should have used: <span id="cal-used"></span> litres</p>
+      <P>You have saved: <span id="excess"></span> litres</p>
+      <P>You have a short of: <span id="short"></span> litres</p> 
+    </div>
+    <script src="app.js"></script>
+   
+</body>
+
+</html>

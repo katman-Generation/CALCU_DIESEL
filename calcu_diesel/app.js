@@ -43,13 +43,13 @@ function consuption() {
         let c = 3.4;
         return c;
     } else if (trailer = 1 && leg == 2) {
-        let c = 2.3;
+        let c = 2.1;
         return c;
     } else if (trailer = 2 && leg == 1) {
         let c = 3.2;
         return c;
     } else {
-        let c = 2.1;
+        let c = 2.3;
         return c;
     }
 }

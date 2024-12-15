@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/styles.css" />
+    <title>Diesel Calculation</title>
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <h1>Diesel Calculation</h1>
+    <form id="myForm">
+        <label for="trailer">What type of trailer do you have?
+            <select id="trailer" name="trailer" required>
+                <option value="">(select one)</option>
+                <option value="tri-axle">Tri-axle</option>
+                <option value="super-link">Super-link</option>
+            </select>
+        </label>
+        <label for="weight">Enter weight (tonnes):
+            <input id="weight" name="weight" type="number" required />
+        </label>
+        <fieldset>
+            <label for="opening">Enter your opening mileage:
+                <input id="opening" name="opening" type="number" required />
+            </label>
+            <label for="closing">Enter your closing mileage:
+                <input id="closing" name="closing" type="number" required min="0" />
+            </label>
+            <label for="total-ltrs">Enter the total litres used:
+                <input id="total-ltrs" name="total-ltrs" type="number" required />
+            </label>
+        </fieldset>
+        <button type="submit">Calculate</button>
+    </form>
+    <div class="results">
+        <h2>Your Results</h2>
+        <p>You have travelled: <span id="km-moved"></span> kms</p>
+        <p>You should have used: <span id="cal-used"></span> litres</p>
+        <p>You have saved: <span id="excess"></span> litres</p>
+        <p>You are short of: <span id="short"></span> litres</p>
+    </div>
+</body>
+
+</html>
